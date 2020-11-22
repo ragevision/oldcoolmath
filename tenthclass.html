@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+      <head>            
+            <title>Tenth Class Coolmaths</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>     
+            <link rel="stylesheet" type="text/css" href="coolmathscss.css">
+     </head>
+    
+     <body>
+         
+           <div id="header">
+           
+               <a href="index.html" style="color: darkorange;text-decoration: none" ><b>COOLMATHS</b>
+                  <span style="color:blue" >.<b>COM</b></span></a>  
+           </div >
+         
+         
+           <div id="mainnavbar">
+               <ul>
+                   <b>
+                      <li id="chaptermenuicon"><i class="fa fa-bars"></i></li>
+                        <li id="classicon">Classes</li>
+                      <li id="home"><a href="index.html"><i class="fa fa-home"></i></a></li>
+                      <li class="class"><a href="ninethclass.html">9<sup> th</sup> Class</a></li>
+                      <li class="class"><a href="tenthclass.html" style="background-color:green">10<sup> th</sup> Class</a></li>
+                      <li class="class"><a href="eleventhclass.html">11<sup> th</sup> Class</a></li>
+                      <li class="class"><a href="twelvethclass.html">12 <sup> th</sup> Class</a></li>
+                   </b>
+               </ul>
+           </div>
+         
+         
+           <div id="chapters">
+               <ul>
+                   <b>
+                       <li><h3 style="text-align: center;color:darkblue;font-family:sans-serif;font-size:23px;padding-top:15px"><b>NCERT CHAPTERS</b></h3></li>
+                      <li class="vrtcl"><a href="#6th" style="background-color:green;color:white">Chapter 1</a></li>
+                      <li class="vrtcl"><a href="#7th">Chapter 2</a></li>
+                      <li class="vrtcl"><a href="#8th">Chapter 3</a></li>
+                      <li class="vrtcl"><a href="#9th">Chapter 4</a></li>
+                      <li class="vrtcl"><a href="#10th">Chapter 5</a></li>
+                      <li class="vrtcl"><a href="#11th">Chapter 6</a></li>
+                      <li class="vrtcl"><a href="#7th">Chapter 7</a></li>
+                      <li class="vrtcl"><a href="#8th">Chapter 8</a></li>
+                      <li class="vrtcl"><a href="#9th">Chapter 9</a></li>
+                      <li class="vrtcl"><a href="#10th">Chapter 10</a></li>
+                      <li class="vrtcl"><a href="#11th">Chapter 11</a></li>
+                      <li class="vrtcl"><a href="#12th">Chapter 12</a></li>    
+                      <li class="vrtcl"><a href="#8th">Chapter 13</a></li>
+                      <li class="vrtcl"><a href="#9th">Chapter 14</a></li>
+                      <li class="vrtcl"><a href="#10th">Chapter 15</a></li>
+                      <li class="vrtcl" style="padding-bottom:200px"><a href="#11th">Chapter 16</a></li>
+                   </b>
+               </ul>
+           </div>
+         
+         
+         <div id="classes">
+             <ul>
+                 <b>
+                      <li class="vrtcl"><a href="ninethclass.html">9<sup> th</sup> CLASS</a></li>
+                      <li class="vrtcl"><a href="tenthclass.html" style="background-color:green;color:white">10<sup> th</sup> CLASS</a></li>
+                      <li class="vrtcl"><a href="eleventhclass.html">11<sup> th</sup> CLASS</a></li>
+                      <li class="vrtcl"><a href="twelvethclass.html">12 <sup> th</sup> CLASS</a></li>
+                 </b>
+             </ul>
+         </div>
+         
+          <script>        
+   $(document).ready(function(){
+        $("#chaptermenuicon").click(function(){
+          $("#chapters").slideToggle("slow");
+             $("#classes").hide("fast");
+                     });
+        });
+               
+   $(document).ready(function(){
+        $("#classicon").click(function(){
+          $("#classes").slideToggle("slow");
+             $("#chapters").hide("fast");
+                     });
+        });
+              </script>
+         
+         
+                 <script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $("#classes").hide("fast");
+       $("#chapters").hide("fast");
+  } 
+}
+var x = window.matchMedia("(max-width: 760px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+      document.getElementById("classes").style.top= "50px";
+      document.getElementById("chapters").style.top= "50px";
+  } else {
+       function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $("#classes").hide("fast");
+       $("#chapters").hide("fast");
+  } 
+}
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+    document.getElementById("classes").style.top= "150px";
+    document.getElementById("chapters").style.top= "150px";   
+  }
+}
+         </script>     
+         
+     </body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Coolmaths Home</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+            <link rel="stylesheet" type="text/css" href="coolmathscss.css">    
+     </head>
+     <body>
+         
+         <div id="header">
+               <a href="coolmaths.html" style="color: darkorange;text-decoration: none" ><b>COOLMATHS</b>
+                  <span style="color:blue">.<b>com</b></span></a>  
+                <p id="optional" style="float:right;color: white;font-size:20px;font-weight:500;text-transform: capitalize;padding-top:50px;padding-right:20px;">learn and understand basic concepts of maths</p>
+           </div >
+           
+            
+         <div id="mainnavbar">
+               <ul>
+                   <b>
+                      <li id="menuicon"><i class="fa fa-bars" ></i></li>
+                      <li id="classicon">Classes</li> 
+                      <li id="loginbtn"><a><i class="fa fa-user"></i></a></li> 
+                      <li id="home"><a href="coolmaths.html" style="background-color:green"><i class="fa fa-home"></i></a></li>
+                      <li class="class"><a href="ninethclass.html">9<sup> th</sup> Class</a></li>
+                      <li class="class"><a href="tenthclass.html">10<sup> th</sup> Class</a></li>
+                      <li class="class"><a href="eleventhclass.html">11<sup> th</sup> Class</a></li>
+                      <li class="class"><a href="twelvethclass.html">12 <sup> th</sup> Class</a></li>
+                   </b>
+               </ul>
+           </div>
+    
+         
+         <div id="menu">
+             <ul>
+                 <b>
+                      <li class="item"><a href="#about">About</a></li>
+                      <li class="item"><a href="services.html">Services</a></li>
+                      <li class="item"><a href="#">Contact</a></li>
+                      <li class="item"><a href="#">Feedback</a></li>
+                 </b>
+             </ul>
+         </div>
+          
+         
+         <div id="classes">
+             <ul>
+                 <b>
+                      <li class="vrtcl"><a href="ninethclass.html">9<sup> th</sup> CLASS</a></li>
+                      <li class="vrtcl"><a href="tenthclass.html">10<sup> th</sup> CLASS</a></li>
+                      <li class="vrtcl"><a href="eleventhclass.html">11<sup> th</sup> CLASS</a></li>
+                      <li class="vrtcl"><a href="twelvethclass.html">12 <sup> th</sup> CLASS</a></li>
+                 </b>
+             </ul>
+         </div>
+         
+         
+         <div id="inspcarousel" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators" style="z-index:3">
+                 <li data-target="#inspcarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#inspcarousel" data-slide-to="1"></li>
+                 <li data-target="#inspcarousel" data-slide-to="2"></li>
+                 <li data-target="#inspcarousel" data-slide-to="3"></li>
+              </ul>
+             
+         <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="img1.jpg" alt="Los Angeles" >
+                           <div class="carousel-caption">
+                            </div>   
+                   </div>
+              <div class="carousel-item ">
+                 <img src="img2.jpg" alt="Chicago" >
+                    <div class="carousel-caption">
+                    </div>   
+              </div>
+              <div class="carousel-item">
+                   <img src="img3.jpg" alt="New York" >
+                       <div class="carousel-caption">
+                       </div>   
+              </div>
+              <div class="carousel-item">
+                  <img src="img4.jpg" alt="New York" >
+                      <div class="carousel-caption">
+                      </div>   
+               </div>
+             </div>
+                <a class="carousel-control-prev" href="#inspcarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                 </a>
+                 <a class="carousel-control-next" href="#inspcarousel" data-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+                 </a>
+         </div>
+         
+         
+         <script>        
+   $(document).ready(function(){
+        $("#menuicon").click(function(){
+          $("#menu").slideToggle("slow");
+            $("#classes").hide("fast");
+                     });
+        });
+             
+              $(document).ready(function(){
+        $("#classicon").click(function(){
+          $("#classes").slideToggle("slow");
+             $("#menu").hide("fast");
+                     });
+        });
+
+        </script>
+         
+                 
+         <script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    $("#menu").hide("fast");   
+      $("#classes").hide("fast");
+      document.getElementById("menu").style.top= "50px";
+      document.getElementById("classes").style.top= "50px";
+
+  } else {
+      $("#menu").hide("fast");
+       $("#classes").hide("fast");
+    document.getElementById("menu").style.top= "150px";
+      document.getElementById("classes").style.top= "150px";
+  }
+}
+</script>
+         
+        
+         
+<div class="card" style="background-color:#333333;width:100%;border-radius:0;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+             <div class="card-body"></div>
+             </div>
+         
+         
+<div id="about" style="background-color: rgba(255, 230, 255, 0.78);">
+             
+         <div class="container pb-5">
+  <h2 class="text-center text-capitalize pt-4">About Us</h2>
+             <hr>
+             <div class="row">
+                 
+                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-4 ">
+  <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <img class="card-img-top" src="aboutimg1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h3 class="card-title">Mohit</h3>
+      <p class="card-text text-capitalize">a BCA student</p>
+      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+    </div>
+  </div>
+                 </div>               
+                 
+                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-4">
+  <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <img class="card-img-top" src="aboutimg1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h3 class="card-title">Mohit</h3>
+      <p class="card-text text-capitalize">a BCA student</p>
+      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+    </div>
+  </div>
+                </div>
+                 
+               <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-4">
+  <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <img class="card-img-top" src="aboutimg1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h3 class="card-title">Mohit</h3>
+      <p class="card-text text-capitalize">a BCA student</p>
+      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+    </div>
+  </div>
+              </div>
+                 
+                                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-4">
+  <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <img class="card-img-top" src="aboutimg1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h3 class="card-title">Mohit</h3>
+      <p class="card-text text-capitalize">a BCA student</p>
+      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+    </div>
+  </div>
+    </div>
+                 
+</div>
+             </div>
+             
+         </div>
+
+    
+    </body>
+</html> 
+
+
+
+
+  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
